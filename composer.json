@@ -1,5 +1,5 @@
 {
-    "name": "futuremandigital/wordpress-ajax-load-more",
+    "name": "futuremandigital/ajax-load-more",
     "description": "Fork of AJAX Load More repo with composer.json for Bedrock.",
     "type": "wordpress-plugin",
     "license": "GPL-3.0",
@@ -8,6 +8,6 @@
       "composer/installers": "~1.0"
     },
     "extra": {
-      "installer-name": "wordpress-ajax-load-more"
+      "installer-name": "ajax-load-more"
     }
   }
