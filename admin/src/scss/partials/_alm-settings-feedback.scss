@@ -1,40 +1,35 @@
 .alm-settings-feedback{
    position: fixed;
    bottom: 20px;
-   right: 25px;
+   right: 20px;
    width: auto;
    height: auto;
-   background: #fff;
-   border-left: 5px solid #5cc583;
-   color: #444;
-   padding: 25px 30px 25px 25px;
+   background: #5cc583;
+   color: #fff;
+   padding: 15px 20px 15px 15px;
    line-height: 1;
    z-index: 9999;
    border-radius: 2px;
    opacity: 0;
    visibility: hidden;
-   transition: all 0.2s ease-in-out;
-   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-   font-size: 13px;
+   transition: all 0.2s ease;
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
    &.--saving{
-      border-color: #e0bd5e;
+      background-color: #e0bd5e;
       opacity: 1;
       visibility: visible;
-      bottom: 25px;
    }
    &.--saved{
       opacity: 1;
       visibility: visible;
-      bottom: 25px;
    }
    &.--error{
-      border-color: #e03e3e;
+      background-color: #e03e3e;
       opacity: 1;
       visibility: visible;
-      bottom: 25px;
    }
    i{
-      opacity: 0.6;
+      opacity: 0.7;
       margin: 0 3px 0 0;
    }
 }
