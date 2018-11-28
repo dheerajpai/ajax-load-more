@@ -4,7 +4,7 @@ let alm_is_filtering = false; // Global Masonry/Filtering var
 
 
 	/* $.fn.almFilter(type, speed, data)
-	 *
+	 * 
 	 *  Filter Ajax Load More
 	 *
 	 *  @param transition string;
@@ -88,15 +88,16 @@ let alm_is_filtering = false; // Global Masonry/Filtering var
 	 *  @since 2.6.1
 	 */
 	let almSetFilters = function(speed, data, el){
+		
+		// Update data attributes
 	   $.each(data, function(key, value) {
 	      key = key.replace(/\W+/g, '-').replace(/([a-z\d])([A-Z])/g, '$1-$2'); // Convert camelCase data() object back to dash (-)
 	      $('.alm-listing', el).attr('data-'+key, value);
-	   });
-	   if ($.isFunction($.fn.almFilterComplete)){
-	      $.fn.almFilterComplete();
-	   }
-	   alm_is_filtering = true;	   
+	   });   
+	   
 		el.fadeIn(speed); // Fade ALM back in
+	   
+	   alm_is_filtering = true;	   
 		
 		// re-initiate Ajax Load More
 	   if(data.target){
